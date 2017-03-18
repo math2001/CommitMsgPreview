@@ -25,7 +25,7 @@ class CommitMsgPreview(sublime_plugin.EventListener):
         with open(os.path.join(__file__, '..', 'emojis.json')) as fp:
             for alias, base64 in json.load(fp).items():
                 html = html.replace(':{}:'.format(alias),
-                                    '<img src="data:image/png;base64,{0}" height="{1}" width="{1}"/>'.format(base64, view.line_height()))
+                                    '<img src="data:image/png;base64,{0}" height="{1}" width="{1}"/>'.format(base64, view.line_height() - 2))
 
         length = len(EMOJI_ALIASES.sub(' ', text))
         color = 'var(--' + ('greenish' if length <= 50 else 'redish')
