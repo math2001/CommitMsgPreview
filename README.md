@@ -11,6 +11,8 @@ actual character, the ruler that I set doesn't work any more.
 
 So, this plugin just shows the actual line plus it's length under the first one *only*.
 
+![display the line with the converted emojis below the first line](screenshots/preview-valid.png)
+
 The emojis are coming from the awesome [emojione][]
 
 [gitmoji guide]: https://gitmoji.carloscuesta.me/
