@@ -10,7 +10,7 @@ phantom_sets = {
     # id: phantom_sets
 }
 
-EMOJI_ALIASES = re.compile(r':[a-zA-Z]+?:')
+EMOJI_ALIASES = re.compile(r':[a-zA-Z_]+?:')
 
 class CommitMsgPreview(sublime_plugin.EventListener):
 
